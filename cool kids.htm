@@ -1,47 +1,46 @@
 <html>
 <head>
-<style>
-#drawing{ width:300px; height:300px;
-border:5px solid red ;
-                
+    <style>
+    #drawing{ width:300px; height:300px;
+        border:5px solid red ;
+                    
 
 
 
 
 
-}
-</style>
+    }
+    </style>
 
 </head>
 
 <body>
-<canvas width=300  height=300 id="drawing"></canvas>
-<script>
-var canvas=document.getElementById ("drawing");
-var ctx = canvas.getContext("2d");
-function mekhidrawings
+    <canvas width=300  height=300 id="drawing"></canvas>
+    <script>
+    var canvas=document.getElementById ("drawing");
+    var ctx = canvas.getContext("2d");
+    function mekhidrawings
 
-ctx.beginPath();
- 
- ctx.arc(75,75,10,0,Math.PI*2,true);
+    ctx.beginPath();
+     
+    ctx.arc(75,75,10,0,Math.PI*2,true);
 
-  ctx.closePath();
-
-  ctx.fill();
-
-
-
-ctx.beginPath();
- 
- ctx.arc(100,100,10,0,Math.PI*2,true);
-
-  ctx.closePath();
-
-  ctx.fill();
+    ctx.closePath();
+    ctx.fill();
 
 
 
-</script>
+    ctx.beginPath();
+     
+    ctx.arc(100,100,10,0,Math.PI*2,true);
+
+    ctx.closePath();
+
+    ctx.fill();
+
+
+
+    </script>
 
 </body>
 

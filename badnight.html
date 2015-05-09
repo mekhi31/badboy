@@ -21,16 +21,33 @@ border:5px solid red ;
 
 </canvas>
 <script>
+
 var canvas=document.getElementById ("drawing");
 var ctx=canvas.getContext("2d");
  
-ctx.beginPath();
+function drawCircle(x, y){
+	ctx.beginPath();
+	ctx.arc(x,y,10,0,Math.PI*2,true);
+	ctx.closePath();
+	ctx.fill();
+}
 
-ctx.arc(75,75,10,0,Math.PI*2,true);
+drawCircle(75, 75);
+drawCircle(75, 100);
+drawCircle(75, 125);
+drawCircle(75, 150);
+drawCircle(100, 150);
 
-ctx.closePath();
+for (var i=1; i <= 300; i+= 25){
+	drawCircle(200, i);
+}
 
-ctx.fill();
+
+
+
+
+
+
  </script>
 
 

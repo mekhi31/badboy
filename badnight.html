@@ -32,19 +32,17 @@ function drawCircle(x, y){
 	ctx.fill();
 }
 
-drawCircle(75, 75);
-drawCircle(75, 100);
-drawCircle(75, 125);
-drawCircle(75, 150);
-drawCircle(100, 150);
-
-for (var i=1; i <= 300; i+= 25){
-	drawCircle(200, i);
-}
-
-
-
-
+    var isdrawing = false;
+    canvas.addEventListener("click", function(evt) {
+      isdrawing = !isdrawing;
+    });
+    canvas.addEventListener("mousemove", function(evt) {
+      if (isdrawing) {
+        drawCircle(evt.x, evt.y);
+      }
+    });
+    
+    
 
 
 
